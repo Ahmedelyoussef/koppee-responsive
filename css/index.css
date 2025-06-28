@@ -303,20 +303,20 @@ header .fa-bars {
 }
 @media screen and (max-width: 515px) {
   .offer .container form input {
-    /* width: 250px; */
+    width: 250px;
   }
   .offer .container form {
     width: 100%;
   }
 }
 /* End Offer Section */
-/* Start Menu-Pricing Section */
-.menu-price {
+/* Start Competitive-Pricing Section */
+.competitive-pricing {
   position: relative;
   background-color: #fffbf2;
   padding: 40px 2rem;
 }
-.menu-price::before {
+.competitive-pricing::before {
   content: "";
   position: absolute;
   background-image: url(../img/separator.png);
@@ -325,61 +325,94 @@ header .fa-bars {
   top: -14px;
   left: 0;
 }
-/* .menu-price .container {
+/* .competitive-pricing .container {
 } */
-.menu-price .separtor {
+.competitive-pricing .separtor {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
 }
-.menu-price .separtor span {
+.competitive-pricing .separtor span {
   display: inline-block;
   width: 2px;
   height: 100px;
   background-color: #da9f5b;
 }
-.menu-price .title {
+.competitive-pricing .title {
   text-align: center;
 }
 
-.menu-price .title h4 {
+.competitive-pricing .title h4 {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #da9f5b;
 }
-.menu-price .title h1 {
+.competitive-pricing .title h1 {
   font-weight: 700;
   font-size: clamp(35px, 6vw, 56px);
+  color: #33211d;
 }
-.menu-price .container .all-menu {
+.competitive-pricing .container .all-menu {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
 }
-.menu-price .container .all-menu .coffe {
+.competitive-pricing .container .all-menu h1 {
+  font-weight: bold;
+  color: #33211d;
+  margin-bottom: 3rem;
+}
+.competitive-pricing .container .all-menu .coffe h4 {
+  color: #33211d;
+}
+.competitive-pricing .container .all-menu .coffe {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 20px;
+  position: relative;
 }
-.menu-price .container .all-menu .coffe img {
+.competitive-pricing .container .all-menu .coffe::before {
+  content: "$5";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #da9f5b;
+  top: -7px;
+  left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  z-index: 1;
+}
+.competitive-pricing .container .all-menu .coffe img {
   width: 100px;
+  height: 100px;
   border-radius: 50%;
   position: relative;
 }
-.menu-price .container .all-menu .coffe img::before {
-  content: "$5";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #da9f5b;
-  top: 20px;
-  right: 0;
-}
-.menu-price .container .all-menu .coffe .description p {
+
+.competitive-pricing .container .all-menu .coffe .description p {
   color: #555;
 }
-/* End Menu-Pricing Section */
+@media screen and (max-width: 991px) {
+  .competitive-pricing .container .all-menu {
+    flex-direction: column;
+  }
+}
+/* End Competitive-Pricing Section */
+/* Start Book Section */
+.book {
+  background-color: #fffbf2;
+}
+.book .container {
+  display: flex;
+  justify-content: space-between;
+}
+.book .container .left {
+
+}
