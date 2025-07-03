@@ -7,6 +7,9 @@
   font-family: "Roboto", sans-serif;
   /* font-family: "Montserrat", sans-serif; */
 }
+section {
+  overflow: hidden;
+}
 /* Start Header */
 header {
   padding: 10px 0;
@@ -287,7 +290,9 @@ header .fa-bars {
   font-size: clamp(20px, 5vw, 22px);
   color: #fff;
 }
-
+.offer .container form {
+  display: flex;
+}
 .offer .container form input {
   padding: 20px;
   /* width: 300px; */
@@ -305,9 +310,9 @@ header .fa-bars {
   .offer .container form input {
     width: 250px;
   }
-  .offer .container form {
+  /* .offer .container form {
     width: 100%;
-  }
+  } */
 }
 /* End Offer Section */
 /* Start Competitive-Pricing Section */
@@ -549,13 +554,16 @@ header .fa-bars {
 .testimonial .container .all-clients .client .top p {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  margin-left: -4rem;
 }
 .testimonial .container .all-clients .client p {
   color: #555555;
 }
 .testimonial .container .all-clients .client .top .title {
   margin-left: 10px;
+}
+.testimonial .container .all-clients i {
+  font-size: 20px;
+  color: #996a33;
 }
 .testimonial .container .move {
   text-align: center;
@@ -577,8 +585,15 @@ header .fa-bars {
   .testimonial .container .all-clients .client {
     width: calc(100% / 2 - 4rem);
   }
+  .testimonial .container .all-clients .removable {
+    display: none;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  .testimonial .container .all-clients .removable {
+    display: none;
+  }
+}
 /* End Testimonial Section */
 /* Start Footer Section */
 
